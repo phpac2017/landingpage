@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Landing Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="bgWrapper">
+      <div class="containerWidth">
+        <header>
+          <figure>
+            <img src="img/LOGO.png" alt="" />
+          </figure>
+          <div class="form">
+            <span class="phNum">513-318-7498</span>
+            <form>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  aria-describedby="emailHelp"
+                  placeholder="First name*"
+                />
+                <i class="fa fa-user"></i>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  aria-describedby="emailHelp"
+                  placeholder="Last name*"
+                />
+                <i class="fa fa-user"></i>
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  pattern=".{10}"
+                  class="form-control"
+                  id="phoneNumber"
+                  placeholder="Phone Number*"
+                  required
+                />
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Email Address*"
+                />
+                <i class="fa fa-envelope"></i>
+              </div>
+              <div class="form-group">
+                <input
+                  id="zip"
+                  name="zip"
+                  class="form-control"
+                  type="text"
+                  inputmode="numeric"
+                  placeholder="Zip Code*"
+                  pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$"
+                />
+              </div>
+              <div class="services">
+                <p>Which Service(s) Are You Inquiring About?</p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="inlineCheckbox1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineCheckbox1"
+                    >Windows</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="inlineCheckbox2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineCheckbox2"
+                    >Siding</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="inlineCheckbox3"
+                    value="option3"
+                  />
+                  <label class="form-check-label" for="inlineCheckbox3"
+                    >Roofing</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea
+                  placeholder="Comments"
+                  class="form-control"
+                  id="comment"
+                ></textarea>
+              </div>
+              <div class="submitBtn">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </header>
+        <div class="homeContainer">
+          <section class="callouts">
+            <div class="row">
+              <div class="col-sm-4 d-flex flex-column justify-content-end">
+                <figure>
+                  <img src="img/WINDOW.png" alt="Window" />
+                </figure>
+                <h4>Windows</h4>
+              </div>
+              <div class="col-sm-4 d-flex flex-column justify-content-end">
+                <figure>
+                  <img src="img/SIDING.png" alt="Siding" />
+                </figure>
+                <h4>Siding</h4>
+              </div>
+              <div class="col-sm-4 d-flex flex-column justify-content-end">
+                <figure>
+                  <img src="img/ROOF.png" alt="Roofing" />
+                </figure>
+                <h4>Roofing</h4>
+              </div>
+            </div>
+          </section>
+          <section class="offer">
+            <div class="offerContent">
+              <h1>50%<span>FF</span></h1>
+              <h4>All purchases of <br />$1,000 or more</h4>
+            </div>
+          </section>
+          <section class="content">
+            <p>
+              Limited Time Only. Offer May Expire. Improve the curb appeal and
+              energy efficiency of your home with the installation of new
+              windows. Our experts offer FREE in home design consultations in
+              the Cincinnati and Northern Kentucky area. Contact us today for
+              all your window, roofing and siding needs.
+            </p>
+            <figure>
+              <img src="img/images.png" alt="" />
+            </figure>
+            <span>
+              <a href="#">Click to Call</a>
+            </span>
+            <h6>
+              Contact Us for a Free In-Home <br />Design Consultation Today
+            </h6>
+          </section>
+        </div>
+        <footer>
+          <figure>
+            <img src="img/footer-logo.png" alt="" />
+          </figure>
+          <div>
+            <span class="phNum">513-318-7498</span>
+            <span class="address"
+              >11880 Kemper Springs Dr. Cincinnati, OH 45240</span
+            >
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
